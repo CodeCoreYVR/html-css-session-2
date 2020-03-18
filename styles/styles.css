@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Thasadith');
+@import url('reset.css');
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+
+body {
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Thasadith;
+
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 5em;
+    background: blue;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.branding {
+    background: lightblue;
+    height: 2em;
+    width: 40%;
+}
+
+.logo {
+    width: 6em;
+    height: 3em;
+
+}
+
+.nav {
+    background: yellow;
+    padding: 1em;
+    width: 60%;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 2.5em;
+    width: 31.33333%;
+    margin: 1%;
+    border: 1px solid #eee;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card:hover {
+    transition: 0.3s ease-out;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    /* horiztonal offset, vertical offset, blur, size */
+    transform: translateY(-2px) scale(1.005) translateZ(0);
+}
+
+.pullquote {
+    flex: 1;
+    line-height: 1.3;
+    font-size: 1.3em;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.footer {
+    background: pink;
+    height: 5em;
+}
